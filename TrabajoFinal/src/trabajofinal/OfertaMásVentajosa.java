@@ -5,22 +5,28 @@ package trabajofinal;
  */
 public class OfertaMásVentajosa {
     public  String aseguradora;
-    public double prima;
-    public double cobertura;
+    public double importe;
+    public double comision;
     
-    public OfertaMásVentajosa(String aseguradora, double prima, double cobertura) {
+    public OfertaMásVentajosa(String aseguradora, double importe, double comision) {
         this.aseguradora = aseguradora;
-        this.prima = prima;
-        this.cobertura = cobertura;
+        this.importe = importe;
+        this.comision = Math.floor(comision);
     } 
     public String getAseguradora(){
         return aseguradora;
     }
-    public double getPrima(){
-        return prima;
+    public double getImporte(){
+        return importe;
     }
-    public double getCobertura(){
-        return cobertura;
+    public double getComision(){
+        return comision;
     }
+    
+    @Override
+    public String toString(){
+        return aseguradora + " | " + importe + " | " + comision;
+    }
+    
 }
 

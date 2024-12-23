@@ -17,7 +17,9 @@ public class LineaIndirecta implements Aseguradora {
     }
     
     @Override
-    public OfertaMásVentajosa getPrecio(Bien bien){
+    public OfertaMásVentajosa getPrecio(Cliente cliente){
+        Bien bien = cliente.getBien();
+        int edad = cliente.calcularEdad();
         double prima = bien.getValor() * 0.025;
         double cobertura = bien.getValor() * 0.85;
         return new OfertaMásVentajosa(getNombre(),prima,cobertura);

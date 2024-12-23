@@ -17,6 +17,12 @@ public class Bien {
         return valor;
     }
     public boolean esValido(){
-        return tipo != null && !tipo.isEmpty() && valor > 0;
+        if("vehiculo".equalsIgnoreCase(tipo)){
+            return valor > 0 && valor <= 50000;
+        }
+        else if("vivienda".equalsIgnoreCase(tipo)){
+            return valor >= 50000;
+        }
+        return false;
     }
 }

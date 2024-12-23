@@ -5,5 +5,5 @@ package trabajofinal;
  */
 public interface Aseguradora {
     String getNombre();
-    OfertaMásVentajosa getPrecio(Bien bien);
+    OfertaMásVentajosa getPrecio(Cliente cliente);
 }

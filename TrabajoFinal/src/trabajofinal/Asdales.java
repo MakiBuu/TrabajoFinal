@@ -12,5 +12,10 @@ public class Asdales implements Aseguradora {
     }
     
     @Override
-    public OfertaMasVentajosa
+    public OfertaMásVentajosa getPrecio(Cliente cliente){
+        Bien bien = cliente.getBien();
+        double prima = bien.getValor() * 0.02;
+        double cobertura = bien.getValor() * 0.8;
+        return new OfertaMásVentajosa(getNombre(),prima,cobertura);
+    }
 }
