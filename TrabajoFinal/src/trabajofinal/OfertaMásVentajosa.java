@@ -4,9 +4,9 @@ package trabajofinal;
  * @author maren
  */
 public class OfertaMásVentajosa {
-    public  String aseguradora;
-    public double importe;
-    public double comision;
+    private  String aseguradora;
+    private double importe;
+    private double comision;
     
     public OfertaMásVentajosa(String aseguradora, double importe, double comision) {
         this.aseguradora = aseguradora;

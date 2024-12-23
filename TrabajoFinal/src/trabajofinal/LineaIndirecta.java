@@ -9,8 +9,7 @@ package trabajofinal;
  * @author maren
  */
 public class LineaIndirecta implements Aseguradora {
-    private final String nombre = "LINEA INDIRECTA";
-    
+    private final String nombre = "LINEA INDIRECTA";   
     @Override
     public String getNombre(){
         return nombre;

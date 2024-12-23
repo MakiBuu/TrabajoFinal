@@ -6,8 +6,8 @@ import java.time.LocalDate;
  * @author maren
  */
 public class Cliente {
-    public Bien bien;
-    public double salario;
+    private Bien bien;
+    private double salario;
     public int annoNacimiento;
     public Cliente(Bien bien,double salario, int annoNacimiento){
         this.bien = bien;

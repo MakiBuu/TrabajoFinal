@@ -23,12 +23,10 @@ public class VistaFalsa implements Vista {
         this.ofertaMostrada = oferta;
         System.out.println(oferta);
     }
-    
     @Override
     public Cliente solicitarDatosCliente(){
         return cliente;
     }
-    
     @Override
     public Bien solicitarDatosBien(){
         return bien;
