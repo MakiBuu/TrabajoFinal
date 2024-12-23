@@ -15,9 +15,10 @@ public class Correduria {
         OfertaMásVentajosa mejorOferta = null;
         for(Aseguradora aseguradora: aseguradoras){
             OfertaMásVentajosa oferta = aseguradora.getPrecio(cliente);
-            if(mejorOferta == null || oferta.getPrima() < mejorOferta.getPrima()){
+            if(mejorOferta == null || oferta.getImporte() < mejorOferta.getImporte() || (oferta.getImporte() == mejorOferta.getImporte() && oferta.getComision() > mejorOferta.getComision())){
                 mejorOferta = oferta;
             }
         }
+        return mejorOferta;
     }
 }

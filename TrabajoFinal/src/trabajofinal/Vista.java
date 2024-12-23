@@ -1,13 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package trabajofinal;
 
 /**
  *
  * @author maren
  */
-public class Vista {
+public interface Vista {
+    void mostrarMensaje(String mensaje);
+    void mostrarMejorOferta(OfertaMásVentajosa oferta);
+    Cliente solicitarDatosCliente();
+    Bien solicitarDatosBien();
     
 }
