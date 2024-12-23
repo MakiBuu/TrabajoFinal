@@ -15,7 +15,7 @@ public class Mafro implements Aseguradora {
     public OfertaMásVentajosa getPrecio(Cliente cliente){
        Bien bien = cliente.getBien();
        int edad = cliente.calcularEdad();
-       double importe = bien.getValor() * 0.03;
+       double importe = 0;
        double comision;
        
        if("vehiculo".equalsIgnoreCase(bien.getTipo()) && edad < 20){
@@ -23,6 +23,9 @@ public class Mafro implements Aseguradora {
        }
        else if("vivienda".equalsIgnoreCase(bien.getTipo()) && bien.getValor() > 200000 && cliente.getSalario() < 20000){
            importe = bien.getValor() * 0.02;
+       }
+       else{
+           importe = bien.getValor() * 0.03;
        }
        if(importe < 1000){
                comision = importe * 0.01;

@@ -5,8 +5,8 @@ package trabajofinal;
  */
 public class Bien {
     private String tipo;
-    private Double valor;
-    public Bien(String tipo, Double valor){
+    private double valor;
+    public Bien(String tipo, double valor){
         this.tipo = tipo;
         this.valor = valor;
     }

@@ -21,7 +21,7 @@ public class VistaFalsa implements Vista {
     @Override
     public void mostrarMejorOferta(OfertaMásVentajosa oferta){
         this.ofertaMostrada = oferta;
-        System.out.println("[OFERTA MOSTRADA]: " + oferta);
+        System.out.println(oferta);
     }
     
     @Override
@@ -33,9 +33,6 @@ public class VistaFalsa implements Vista {
     public Bien solicitarDatosBien(){
         return bien;
     }
-  
-    
-    
     public OfertaMásVentajosa getOfertaMostrada(){
         return ofertaMostrada;
     }

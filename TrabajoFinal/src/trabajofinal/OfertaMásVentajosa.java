@@ -25,7 +25,7 @@ public class OfertaMásVentajosa {
     
     @Override
     public String toString(){
-        return aseguradora + " | " + importe + " | " + comision;
+        return aseguradora + "|" + (int) importe + "|" + (int) comision;
     }
     
 }
